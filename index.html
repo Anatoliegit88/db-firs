@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous" />
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <title>Used Cars Table</title>
+  </head>
+  <body>
+    <div id="app">
+      <div class="container">
+        <table class="table table-bordered border-dark bg-light">
+          <strong><h5>List of Used Cars</h5></strong>
+
+          <thead class="table-dark">
+            <tr>
+              <th scope="col"># ID</th>
+              <!-- <th scope="col" v-for="used in used_cars">{{used.text}}</th> -->
+              <th scope="col">First Property</th>
+              <th scope="col">Second Property</th>
+              <th scope="col">Third Property</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th scope="row">ID</th>
+              <td>INT - PRIMARY_KEY</td>
+              <td>NOTNULL, UNIQUE</td>
+              <td>AUTO_INCREMENT</td>
+            </tr>
+
+            <tr>
+              <th scope="row">TYPE</th>
+              <td>VARCHAR(20)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">CAR BRAND</th>
+              <td>VARCHAR(30)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">MODEL</th>
+              <td>VARCHAR(30)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">VARIANT</th>
+              <td>VARCHAR(30)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">AGE</th>
+              <td>YEAR</td>
+              <td>NULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">CONDITION</th>
+              <td>TEXT</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">FUEL TYPE</th>
+              <td>VARCHAR(10)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">KM</th>
+              <td>MEDIUM</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">POWER</th>
+              <td>MEDIUM</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">GEAR</th>
+              <td>VARCHAR(15)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">COLOR</th>
+              <td>VARCHAR(20)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+            <tr>
+              <th scope="row">PRICE</th>
+              <td>DECIMAL(10, 2)</td>
+              <td>NOTNULL</td>
+              <td>-</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

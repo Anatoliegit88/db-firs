@@ -1,0 +1,19 @@
+Machine Usate!
+
+id:                        
+type:
+car brand:
+model:
+variant:
+age:
+condition:
+fuel type:
+fuel consumption:
+km:
+power:
+gear:
+color:
+nr. of doors:
+nr. of seats:
+environment:
+price:
